@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Hugs and Kisses (Solution) </title>
+	<link href="../../style.css" rel="stylesheet" type="text/css" media="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+<!-- Sidebar start -->
+
+<nav>
+	<div>
+	<!-- Optional image in sidebar, will be resized if it's too big -->
+	<img src="" alt="">
+	<a href="index.html">Home</a>
+	<a href="osint.html">OSINT Writeups</a>
+	<a href="puzzles.html">Puzzles</a>
+	<a href="truisms.html"><img src = "../../click.gif"></a>
+	<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Edit link text</a>
+	<!-- Up to 8 links fit comfortably on my small laptop screen with the image used in the preview;
+			Without an image, up to 14 links fit -->
+	</div>
+</nav>
+
+<div class="stripe"></div>
+
+<!-- Sidebar end -->
+
+<main>
+
+<div class="container"> <!-- Keeps sections from getting too stretched on ultrawide monitors -->
+
+<header>
+
+	<h1>Hugs and Kisses (Solution)</h1>
+
+</header>
+
+<section> 
+    <h6>Puzzle Author: me :D</h6>
+
+<center>
+    <h4>
+        <p> ANSWER: <span class="censor-block">INTEGER</span></p>
+    </h4>
+    <br>
+</center>
+
+Author's Note: This puzzle was originally called <span class="censor-block">A Very Medium Integer</span>, hence the no-longer-thematic answer. I sacrificed the answer for the title. My deepest apologies.
+
+<br><br>
+
+<div class = "text-block">
+        This is a super long string of Xs and Os, with no real information or flavourtext to accompany it. This leaves us with no choice but to jump into it directly.
+
+Armed with our contextual knowledge of puzzles, we recall that anything represented with two symbols is likely to be binary. "Converting" our string into binary (X → 1, O → 0) gives ... the exact same thing but with 1s and 0s instead of Xs and Os. We could try converting this to text, but the result is incomprehensible. Instead, converting this to a base 10 number (perhaps most easily done with int(str(num), 2) in python) yields something interesting:
+<br><br>
+1113212131231332331233323332311231233321332321323132121312123321321123121123123312311211233121123211121323123112132133332331121133323111123233321112333213112111321213131212052020051802050615180502120520200518010620051805120520200518020506151805211205202005180205061518050612052020051801062005181712052020051802050615180510120520200518010620051818120520200518010620051814120520200518010620051813120520200518020506151805061205202005180106200518011205202005180205061518050612052020051801062005180512052020051802050615180516120520200518020506151805191205202005180205061518050612052020051802050615180510120520200518010620051818120520200518020506151805151205202005180106200518201205202005180205061518051312052020051802050615180513120520200518010620051802120520200518010620051814120520200518010620051813120520200518020506151805231205202005180205061518050612052020051801062005181712052020051802050615180521120520200518010620051819120520200518010620051814120520200518020506151805211205202005180205061518050612052020051801062005182312052020051802050615180521
+<br><br>
+There's a seemingly patterned string of numbers in the beginning, followed by some numbers possibly demarcated by zeros? Looking at the beginning, we have 
+<br><br>
+111321213123133233123332333231123123332133232132313212131212332132112312112312331231121123312112321112132312311213213333233112113332311112323332111233321311211132121313121(2?)
+<br><br>
+which looks a bit like base 4, or maybe ternary ... none of these seem to work. This is actually morse code (dit = 1, dah = 3, space = 2), which means that 2 on the end probably doesn't belong. A quick ⌘+F turns this into:
+<br><br>
+V E R Y G O O D N O W T A K E R E M A I N I N G D I G I T S A N D A 1 Z 2 6 T O S O L V E + E
+<br><br>
+Oops, looks like we overshot the length a bit (those end characters probably don't belong either). Putting everything back where it belongs, we have "VERY GOOD, NOW TAKE REMAINING DIGITS AND A1Z26 TO SOLVE", with the "remaining digits" being:
+<br><br>
+12052020051802050615180502120520200518010620051805120520200518020506151805211205202005180205061518050612052020051801062005181712052020051802050615180510120520200518010620051818120520200518010620051814120520200518010620051813120520200518020506151805061205202005180106200518011205202005180205061518050612052020051801062005180512052020051802050615180516120520200518020506151805191205202005180205061518050612052020051802050615180510120520200518010620051818120520200518020506151805151205202005180106200518201205202005180205061518051312052020051802050615180513120520200518010620051802120520200518010620051814120520200518010620051813120520200518020506151805231205202005180205061518050612052020051801062005181712052020051802050615180521120520200518010620051819120520200518010620051814120520200518020506151805211205202005180205061518050612052020051801062005182312052020051802050615180521
+<br><br>
+Splitting these into chunks of two (it might be time to do some list comprehension in Python, but don't be scared. You can do it, I believe in you.) gives:
+<br><br>
+12 05 20 20 05 18 02 05 06 15 18 05 02 12 05 20 20 05 18 01 06 20 05 18 05 12 05 20 20 05 18 02 05 06 15 18 05 21 12 05 20 20 05 18 02 05 06 15 18 05 06 12 05 20 20 05 18 01 06 20 05 18 17 12 05 20 20 05 18 02 05 06 15 18 05 10 12 05 20 20 05 18 01 06 20 05 18 18 12 05 20 20 05 18 01 06 20 05 18 14 12 05 20 20 05 18 01 06 20 05 18 13 12 05 20 20 05 18 02 05 06 15 18 05 06 12 05 20 20 05 18 01 06 20 05 18 01 12 05 20 20 05 18 02 05 06 15 18 05 06 12 05 20 20 05 18 01 06 20 05 18 05 12 05 20 20 05 18 02 05 06 15 18 05 16 12 05 20 20 05 18 02 05 06 15 18 05 19 12 05 20 20 05 18 02 05 06 15 18 05 06 12 05 20 20 05 18 02 05 06 15 18 05 10 12 05 20 20 05 18 01 06 20 05 18 18 12 05 20 20 05 18 02 05 06 15 18 05 15 12 05 20 20 05 18 01 06 20 05 18 20 12 05 20 20 05 18 02 05 06 15 18 05 13 12 05 20 20 05 18 02 05 06 15 18 05 13 12 05 20 20 05 18 01 06 20 05 18 02 12 05 20 20 05 18 01 06 20 05 18 14 12 05 20 20 05 18 01 06 20 05 18 13 12 05 20 20 05 18 02 05 06 15 18 05 23 12 05 20 20 05 18 02 05 06 15 18 05 06 12 05 20 20 05 18 01 06 20 05 18 17 12 05 20 20 05 18 02 05 06 15 18 05 21 12 05 20 20 05 18 01 06 20 05 18 19 12 05 20 20 05 18 01 06 20 05 18 14 12 05 20 20 05 18 02 05 06 15 18 05 21 12 05 20 20 05 18 02 05 06 15 18 05 06 12 05 20 20 05 18 01 06 20 05 18 23 12 05 20 20 05 18 02 05 06 15 18 05 21 
+<br><br>
+which A1Z26s to:
+<br><br>
+LETTER BEFORE B
+LETTER AFTER E
+LETTER BEFORE U
+LETTER BEFORE F
+LETTER AFTER Q
+LETTER BEFORE J
+LETTER AFTER R
+LETTER AFTER N
+LETTER AFTER M
+LETTER BEFORE F
+LETTER AFTER A
+LETTER BEFORE F
+LETTER AFTER E
+LETTER BEFORE P
+LETTER BEFORE S
+LETTER BEFORE F
+LETTER BEFORE J
+LETTER AFTER R
+LETTER BEFORE O
+LETTER AFTER T
+LETTER BEFORE M
+LETTER BEFORE M
+LETTER AFTER B
+LETTER AFTER N
+LETTER AFTER M
+LETTER BEFORE W
+LETTER BEFORE F
+LETTER AFTER Q
+LETTER BEFORE U
+LETTER AFTER S
+LETTER AFTER N
+LETTER BEFORE U
+LETTER BEFORE F
+LETTER AFTER W
+LETTER BEFORE U
+<br><br>
+Ok we're getting somewhere! This is probably best done in Excel (see my janky example below for the second entry):
+<br><br>
+A1: LETTER AFTER E
+<br>
+B1: =MID(A1, 8, 1) -> <b>A</b>
+<br>
+C1: =IF(A1= "B",-1,1) -> <b>1</b>
+<br>
+D1: =RIGHT(A1, 1) -> <b>E</b>
+<br>
+E1: =FIND(D1,"ABCDEFGHIJKLMNOPQRSTUVWXYZ",1) -> <b>2</b>
+<br>
+F1: =MID("ABCDEFGHIJKLMNOPQRSTUVWXYZ", E1 + C1, 1) -> <b>F</b>
+<br><br>
+Applying this to the entire column gives AFTER IS ONE BEFORE IS NULL CONVERT TO TEXT. This means that, in the previous step, the BEFORE and AFTER can be converted back to binary (in a full-circle moment) and decoded. Doing so (via =IF(B1="BEFORE",0,1)) and grouping into chunks of 5) gives 
+<br><br>
+01001 -> 9 <br>
+01110 -> 14 <br>
+10100 -> 20 <br>
+00101 -> 5 <br>
+00111 -> 7 <br>
+00101 -> 5 <br>
+10010 -> 18 <br>
+00000 -> 0 <br>
+<br><br>
+A1Z26ing the decimal representations gives <div class="censor-block">INTEGER</div> (the answer to the puzzle) followed by the NUL character, so we can assume we've reached the end! Bravo!
+
+    </div>
+
+
+</section>
+
+<footer>
+
+	<p>stentor.css by <a href="https://ribo.zone/free/layouts/">ribo.zone</a></p>
+	
+</footer> 
+
+</div>
+
+</main>
+
+</body>
+</html>
