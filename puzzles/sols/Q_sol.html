@@ -11,19 +11,14 @@
 
 <!-- Sidebar start -->
 
-<nav>
-	<div>
-	<!-- Optional image in sidebar, will be resized if it's too big -->
-	<img src="" alt="">
-	<a href="index.html">Home</a>
-	<a href="osint.html">OSINT Writeups</a>
-	<a href="puzzles.html">Puzzles</a>
-	<a href="truisms.html"><img src = "../../click.gif"></a>
-	<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Edit link text</a>
-	<!-- Up to 8 links fit comfortably on my small laptop screen with the image used in the preview;
-			Without an image, up to 14 links fit -->
-	</div>
-</nav>
+<div id="navbar"></div>
+<script>
+  fetch('/navbar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
 
 <div class="stripe"></div>
 
@@ -38,6 +33,12 @@
 	<h1>Q??? (Solution)</h1>
 
 </header>
+
+<section style="display: flex; justify-content: space-between; align-items: center;">
+    <h6 style="margin: 1;">
+        <a href="../Q.html">BACK</a>
+    </h6>
+</section>
 
 <section> 
     <h6>Puzzle Author: me :D</h6>
@@ -71,7 +72,7 @@ A quick Google search for "Q666" (with quotes) brings up the always-unhelpful ne
 
 <br> <br>
 
-At this point, all we need to do is find entry Q777 and fill in the grid! 
+At this point, all we need to do is find entry Q777 to get our answer! 
 
 
 </section>

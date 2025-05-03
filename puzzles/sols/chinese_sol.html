@@ -11,19 +11,14 @@
 
 <!-- Sidebar start -->
 
-<nav>
-	<div>
-	<!-- Optional image in sidebar, will be resized if it's too big -->
-	<img src="" alt="">
-	<a href="index.html">Home</a>
-	<a href="osint.html">OSINT Writeups</a>
-	<a href="puzzles.html">Puzzles</a>
-	<a href="truisms.html"><img src = "../../click.gif"></a>
-	<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Edit link text</a>
-	<!-- Up to 8 links fit comfortably on my small laptop screen with the image used in the preview;
-			Without an image, up to 14 links fit -->
-	</div>
-</nav>
+<div id="navbar"></div>
+<script>
+  fetch('/navbar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
 
 <div class="stripe"></div>
 
@@ -50,9 +45,10 @@
 
 <center>
     <h4>
-        <p> ANSWER: <span class="censor-block">NOUN</span></p>
+        ANSWER: <span class="censor-block">NOUN</span></p>
     </h4>
     <br>
+	
 </center>
 
 This is a list of (traditional) Chinese characters, arranged in two rows of eight. Translation of these characters reveals that they are the <a href = "https://en.wikipedia.org/Bagua">Sì Xiàng (四像)</a>, or <i> Four Aspects </i> of the Chinese <i>Bagua</i>, formed by the <i> Dual Powers </i> (Yin and Yang). Converting these Aspects into their corresponding bigrams gives an arrangement that kind of sort of maybe looks like our answer!

@@ -11,19 +11,14 @@
 
 <!-- Sidebar start -->
 
-<nav>
-	<div>
-	<!-- Optional image in sidebar, will be resized if it's too big -->
-	<img src="" alt="">
-	<a href="index.html">Home</a>
-	<a href="osint.html">OSINT Writeups</a>
-	<a href="puzzles.html">Puzzles</a>
-	<a href="truisms.html"><img src = "../../click.gif"></a>
-	<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Edit link text</a>
-	<!-- Up to 8 links fit comfortably on my small laptop screen with the image used in the preview;
-			Without an image, up to 14 links fit -->
-	</div>
-</nav>
+<div id="navbar"></div>
+<script>
+  fetch('/navbar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
 
 <div class="stripe"></div>
 
@@ -39,6 +34,12 @@
 
 </header>
 
+<section style="display: flex; justify-content: space-between; align-items: center;">
+    <h6 style="margin: 1;">
+        <a href="../xoxo.html">BACK</a>
+    </h6>
+</section>
+
 <section> 
     <h6>Puzzle Author: me :D</h6>
 
@@ -51,9 +52,9 @@
 
 Author's Note: This puzzle was originally called <span class="censor-block">A Very Medium Integer</span>, hence the no-longer-thematic answer. I sacrificed the answer for the title. My deepest apologies.
 
-<br><br>
+<br><br><hr>
 
-<div class = "text-block">
+<p class = "text-block">
         This is a super long string of Xs and Os, with no real information or flavourtext to accompany it. This leaves us with no choice but to jump into it directly.
 
 Armed with our contextual knowledge of puzzles, we recall that anything represented with two symbols is likely to be binary. "Converting" our string into binary (X → 1, O → 0) gives ... the exact same thing but with 1s and 0s instead of Xs and Os. We could try converting this to text, but the result is incomprehensible. Instead, converting this to a base 10 number (perhaps most easily done with int(str(num), 2) in python) yields something interesting:

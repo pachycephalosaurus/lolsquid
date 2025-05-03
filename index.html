@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> hem </title>
+	<title> lol くコ:彡 </title>
 	<link href="style.css" rel="stylesheet" type="text/css" media="all">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
@@ -11,19 +11,14 @@
 
 <!-- Sidebar start -->
 
-<nav>
-	<div>
-	<!-- Optional image in sidebar, will be resized if it's too big -->
-	<img src="" alt="">
-	<a href="index.html">Home</a>
-	<a href="osint.html">OSINT Writeups</a>
-	<a href="puzzles.html">Puzzles</a>
-	<a href="truisms.html"><img src = "click.gif"></a>
-	<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Edit link text</a>
-	<!-- Up to 8 links fit comfortably on my small laptop screen with the image used in the preview;
-			Without an image, up to 14 links fit -->
-	</div>
-</nav>
+<div id="navbar"></div>
+<script>
+  fetch('/navbar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
 
 <div class="stripe"></div>
 
@@ -67,7 +62,7 @@
  <a href = "https://neocities.org"><img src="neocities.png" style="widthL:88px;height:31px;"></a>
  </center> 
   
-	<h1>welcome to my website!</h1>
+	<h1>welcome to my website! くコ:彡 </h1>
 
 </header>
 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Page</title>
+</head>
+<body>
+
+<img src="/rick.gif">
+
+<audio id="myAudio" autoplay>
+  <source src="your-audio-file.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('myAudio');
+    const playPromise = audio.play();
+
+    // Handle autoplay restrictions
+    if (playPromise !== undefined) {
+      playPromise.catch(error => {
+        console.log('Autoplay prevented:', error);
+        // Optional: show a "Click to Play" button if autoplay fails
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
