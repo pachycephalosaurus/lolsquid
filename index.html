@@ -11,7 +11,20 @@
 
 <!-- Sidebar start -->
 
-<div id="navbar"></div>
+<nav>
+	<div>
+	<!-- Optional image in sidebar, will be resized if it's too big -->
+	<!-- <img src="" alt=""> -->
+	<a href="/index.html">Home</a>
+	<a href="/osint.html">OSINT Writeups</a>
+	<a href="/puzzles.html">Puzzles</a>
+	<a href="/truisms.html"><img src = "/img/click.gif" width = 60%></a>
+	<!-- Up to 8 links fit comfortably on my small laptop screen with the image used in the preview;
+			Without an image, up to 14 links fit -->
+    <a href="/music.html">μzik</a>
+	<a href="/rick.html">くコ:彡</a>
+    </div>
+</nav>
 
 <div class="stripe"></div>
 
@@ -51,7 +64,7 @@
 	<a href = "https://imageproxy.ifunny.co/crop:x-20,resize:640x,quality:90x75/images/90abec482f06566f56723105c2ef55743abc40178a4bb0ff5bf575c9fe21c784_1.jpg" target = "_blank"><img src="88x31s/top100womensites.gif" style="width:88px;height:31px;"></a>
 	<a href = "https://en.wikipedia.org/wiki/Axilla" target = "_blank"><img src="88x31s/sniffit.gif" style="width:88px;height:31px;"></a>
 	<a href = "https://j3nny.neocities.org" target = "_blank"><img src="88x31s/got_html.gif" style="width:88px;height:31px;"></a>
-	<a href = "https://neocities.org" target = "_blank"><img src="neocities.png" style="width:88px;height:31px;"></a>
+	<a href = "https://neocities.org" target = "_blank"><img src="/88x31s/neocities.png" style="width:88px;height:31px;"></a>
 	</center> 
 
 <header> 
@@ -96,14 +109,6 @@
 </div>
 
 </main>
-
-<script>
-	fetch('/navbar.html')
-	  .then(res => res.text())
-	  .then(html => {
-		document.getElementById('navbar').innerHTML = html;
-	  });
-  </script>
 
 </body>
 </html>
