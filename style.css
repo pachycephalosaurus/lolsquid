@@ -165,7 +165,9 @@ nav div {
 	right: -1.5vw;
 	text-align: right;
 }
-
+	.inline-block-child {
+	display: inline-block;
+}
 	.censor-block {
 		color: transparent;
 		background-color: black;
