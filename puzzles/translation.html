@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Lost in Translation </title>
+	<link href="../style.css" rel="stylesheet" type="text/css" media="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+<!-- Sidebar start -->
+
+<div id="navbar"></div>
+<script>
+  fetch('/navbar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
+
+<div class="stripe"></div>
+
+<!-- Sidebar end -->
+
+<main>
+
+<div class="container"> <!-- Keeps sections from getting too stretched on ultrawide monitors -->
+
+<header>
+
+	<h1>Lost in Translation<h1>
+
+</header>
+
+<section style="display: flex; justify-content: space-between; align-items: center;">
+    <h6 style="margin: 1;">
+        <a href="../puzzles.html">BACK</a>
+    </h6>
+    <h6 style="margin: 1;">
+        <a href="sols/trans_sol.html">View Solution</a>
+    </h6>
+</section>
+
+
+    <div class="text-block" style="font-size: 14pt">
+        I love a good translation gaffe! The blue box below covers the translated version of the English text above it, but it wasn't properly translated
+        ... 
+        <br>
+        <br>
+        Your tasks are to: <br>
+        1. Find the coordinates of this building <br>
+        2. Translate the covered text <br>
+        3. Identify the person who posted the updated sign <br>
+        4. Find the name of the (circled)
+        bedside table
+
+
+        <img src = "trans.png"> 
+
+      </div>
+
+
+
+<footer>
+
+	<p>stentor.css by <a href="https://ribo.zone/free/layouts/">ribo.zone</a></p>
+	
+</footer> 
+
+</div>
+
+</main>
+
+</body>
+</html>

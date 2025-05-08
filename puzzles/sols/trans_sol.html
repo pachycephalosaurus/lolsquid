@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Lost in Translation </title>
+	<link href="../../style.css" rel="stylesheet" type="text/css" media="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+<!-- Sidebar start -->
+
+<div id="navbar"></div>
+<script>
+  fetch('/navbar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
+
+<div class="stripe"></div>
+
+<!-- Sidebar end -->
+
+<main>
+
+<div class="container"> <!-- Keeps sections from getting too stretched on ultrawide monitors -->
+
+<header>
+
+	<h1>Lost in Translation (Solution)</h1>
+
+</header>
+
+<section style="display: flex; justify-content: space-between; align-items: center;">
+    <h6 style="margin: 1;">
+        <a href="../translation.html">BACK</a>
+    </h6>
+</section>
+
+<section> 
+    <h6>Puzzle Author: me :D</h6>
+
+<center>
+    <h4>
+        ANSWERS: <br> <br>
+        1. <span class="censor-block">26.180238ºN, 50.504031ºE</span></p>
+        2. <span class="censor-block">"The same thing as written, but in Arabic"</span></p>
+        3. <span class="censor-block">Ahmed Ahmed</span></p>
+        4. <span class="censor-block">BJÖRKSNÄS</span></p>
+
+    </h4>
+    <br>
+	
+</center>
+
+This is a fun one! Looking at the image, not much stands out (except for some graphic design choices that may strike you as uniquely Scandinavian...or not!), but a quick Google RIS reveals that this is the IKEA in Bahrain. Looking on Google Maps quickly gives us our first answer, so now the goal is to translate the sign. Most pictures on Google feature the incorrect text, so it's almost trivial to paste it into Google Translate and discover that it means something along the lines of "the same thing as above, but in Arabic". Halfway done, we look for the corrected sign. The trick here is that it isn't actually on Google Street View, but rather in a Photo Sphere (on the map at 26.18025242838347, 50.503603543410705). This Sphere was posted by Ahmed Ahmed (solving task 3), and zooming in a bit gives us a clearer view of the bedside table. This table is from the BJÖRKSNÄS line, so this ties everything up for us!
+
+
+
+</section>
+
+<footer>
+
+	<p>stentor.css by <a href="https://ribo.zone/free/layouts/">ribo.zone</a></p>
+	
+</footer> 
+
+</div>
+
+</main>
+
+</body>
+</html>
