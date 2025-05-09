@@ -13,7 +13,7 @@
 
 <div id="navbar"></div>
 <script>
-  fetch('/navbar.html')
+  fetch('../navbar.html')
     .then(res => res.text())
     .then(html => {
       document.getElementById('navbar').innerHTML = html;
@@ -39,7 +39,7 @@
         <a href="../puzzles.html">BACK</a>
     </h6>
     <h6 style="margin: 1;">
-        <a href="/puzzles/sols/Q_sol.html">View Solution</a>
+        <a href="sols/Q_sol.html">View Solution</a>
     </h6>
 </section>
 
