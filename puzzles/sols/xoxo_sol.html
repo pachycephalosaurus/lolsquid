@@ -13,7 +13,7 @@
 
 <div id="navbar"></div>
 <script>
-  fetch('/navbar.html')
+  fetch('navbar.html')
     .then(res => res.text())
     .then(html => {
       document.getElementById('navbar').innerHTML = html;
@@ -65,11 +65,11 @@ There's a seemingly patterned string of numbers in the beginning, followed by so
 <br><br>
 111321213123133233123332333231123123332133232132313212131212332132112312112312331231121123312112321112132312311213213333233112113332311112323332111233321311211132121313121(2?)
 <br><br>
-which looks a bit like base 4, or maybe ternary ... none of these seem to work. This is actually morse code (dit = 1, dah = 3, space = 2), which means that 2 on the end probably doesn't belong. A quick ⌘+F turns this into:
+which looks a bit like base 4, or maybe ternary ... none of these seem to work. This is actually morse code (dit = 1, dah = 3, space = 2), which means that 2 on the end probably doesn't belong. A good ol' Find/Replace + dCode combo turns this into:
 <br><br>
 V E R Y G O O D N O W T A K E R E M A I N I N G D I G I T S A N D A 1 Z 2 6 T O S O L V E + E
 <br><br>
-Oops, looks like we overshot the length a bit (those end characters probably don't belong either). Putting everything back where it belongs, we have "VERY GOOD, NOW TAKE REMAINING DIGITS AND A1Z26 TO SOLVE", with the "remaining digits" being:
+Oops, looks like we overshot the length a bit (those end characters probably don't belong). Putting everything back where it belongs, we have "VERY GOOD, NOW TAKE REMAINING DIGITS AND A1Z26 TO SOLVE", with the "remaining digits" being:
 <br><br>
 12052020051802050615180502120520200518010620051805120520200518020506151805211205202005180205061518050612052020051801062005181712052020051802050615180510120520200518010620051818120520200518010620051814120520200518010620051813120520200518020506151805061205202005180106200518011205202005180205061518050612052020051801062005180512052020051802050615180516120520200518020506151805191205202005180205061518050612052020051802050615180510120520200518010620051818120520200518020506151805151205202005180106200518201205202005180205061518051312052020051802050615180513120520200518010620051802120520200518010620051814120520200518010620051813120520200518020506151805231205202005180205061518050612052020051801062005181712052020051802050615180521120520200518010620051819120520200518010620051814120520200518020506151805211205202005180205061518050612052020051801062005182312052020051802050615180521
 <br><br>

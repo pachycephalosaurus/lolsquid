@@ -11,7 +11,14 @@
 
 <!-- Sidebar start -->
 
-<object type="text/html" data="navbar.html"></object>
+<div id="navbar"></div>
+<script>
+  fetch('navbar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script> 
 
 <div class="stripe"></div>
 
