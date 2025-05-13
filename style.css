@@ -166,6 +166,17 @@ nav div {
 	right: -1.5vw;
 	text-align: right;
 }
+
+	.scroll-container {
+	background-color: #333;
+	overflow: auto;
+	white-space: nowrap;
+	padding: 10px;
+}
+
+	.scroll-container img {
+  	padding: 10px;
+}
 	.inline-block-child {
 	display: inline-block;
 }
