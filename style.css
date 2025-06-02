@@ -171,11 +171,16 @@ nav div {
 	background-color: #333;
 	overflow: auto;
 	white-space: nowrap;
+	align-items: center;
 	padding: 10px;
+	height: 800px;
 }
 
 	.scroll-container img {
-  	padding: 10px;
+	height: 95%;
+	width: auto;
+	object-fit: contain; 
+	margin-right: 10px;
 }
 	.inline-block-child {
 	display: inline-block;
