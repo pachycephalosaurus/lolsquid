@@ -148,6 +148,14 @@ body {
 
 img { max-width: 100% }
 
+	.blur{
+		filter: blur(10px);
+	}
+
+	.blur:hover{
+		filter: blur(0);
+	}
+
 nav {
 	float: left;
 	width: 15%;

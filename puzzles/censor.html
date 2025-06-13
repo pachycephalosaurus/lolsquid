@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Secret Location </title>
+	<link href="../style.css" rel="stylesheet" type="text/css" media="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+<!-- Sidebar start -->
+
+<div id="navbar"></div>
+<script>
+  fetch('../navbar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
+
+<div class="stripe"></div>
+
+<!-- Sidebar end -->
+
+<main>
+
+<div class="container"> <!-- Keeps sections from getting too stretched on ultrawide monitors -->
+
+<header>
+
+	<h1>Secret Location<h1>
+
+</header>
+
+<section style="display: flex; justify-content: space-between; align-items: center;">
+    <h6 style="margin: 1;">
+        <a href="../puzzles.html">BACK</a>
+    </h6>
+    <h6 style="margin: 1;">
+        <a href="sols/censor_sol.html">View Solution</a>
+    </h6>
+</section>
+
+
+<center>
+    <div class="text-block" text-align="center">
+        <h1>
+            <a href = "https://what3words.com" target = "_blank">WWW</a>here am I?
+        </h1>
+
+        <br><br>
+
+        <h5>
+            ███████, now having ████ ██ █████ ██ ██████ that he <br> had no ██████████ ██ ███████, moved ████ ███ <br>across ███ █████ ███ █████. The ████ ████ was still <br>██████ █████ ahead when ██████ ██████ on ███ █████ <br>█████, and the ██████ ████████ of ████████ ██████ ███ <br>on the █████ in front of ████. She █████ the ████ <br>████ and █████ across the █████ like a ███████████, <br>searching for ███ ████ of ███████████ ███.
+        </h5>
+            
+      </div>
+</center>
+
+
+
+<footer>
+
+	<p>stentor.css by <a href="https://ribo.zone/free/layouts/">ribo.zone</a></p>
+	
+</footer> 
+
+</div>
+
+</main>
+
+</body>
+</html>

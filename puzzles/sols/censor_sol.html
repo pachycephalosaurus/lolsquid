@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Secret Location </title>
+	<link href="../../style.css" rel="stylesheet" type="text/css" media="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+<!-- Sidebar start -->
+
+<div id="navbar"></div>
+<script>
+  fetch('/navbar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
+
+<div class="stripe"></div>
+
+<!-- Sidebar end -->
+
+<main>
+
+<div class="container"> <!-- Keeps sections from getting too stretched on ultrawide monitors -->
+
+<header>
+
+	<h1>Secret Location</h1>
+
+</header>
+
+<section style="display: flex; justify-content: space-between; align-items: center;">
+    <h6 style="margin: 1;">
+        <a href="../censor.html">BACK</a>
+    </h6>
+</section>
+
+<section> 
+    <h6>Puzzle Author: me :D</h6>
+
+<center>
+    <h4>
+        ANSWER: <br> <span class="censor-block">breathy <br> talent <br> certainty </span></p>
+    </h4>
+    <br>
+	
+</center>
+
+This puzzle asks you to determine the location of ... something ... given a heavily-censored ... something. Without knowing too much, we do notice that the censor blocks themselves seem proportional to the word lengths, and inspecting (highlighting) reveals that these are a way of indicating the length of the word behind it. It is technically possible to brute-force a search for things containing every fragment unhidden, but a bit of massaging reveals more information (left as exercise to the puzzler). 
+<br>
+<br>
+This excerpt is from <i> The Da Vinci Code</i>, and the full text reads:
+<br>
+<br>
+<i>"Langdon, now having made it clear to Sophie that he had no intention of leaving, moved with her across the Salle des Etats. The Mona Lisa was still twenty yards ahead when Sophie turned on the black light, and the bluish crescent of pen light fanned out on the floor in front of them. She swung the beam back and forth across the floor like a minesweeper, searching for any hint of luminescent ink."</i>
+
+<br><br>
+
+This tells us exactly where we are! The <i>Salle des Etats</i> is the hall in the Louvre where the Mona Lisa is, and we specifically are twenty yards away from it! 
+<br><br>
+
+<a href = "https://www.what3words.com" target = "_blank">what3words</a> is a specific geolocation service that assigns unique three-word identifiers to every 9 m² square on the map. Plugging in the coordinates from Google Maps (using the Measure Distance tool!) gives us our answer!
+
+
+    <img src = "censor_sol.png", class = "blur">
+
+</section>
+
+<footer>
+
+	<p>stentor.css by <a href="https://ribo.zone/free/layouts/">ribo.zone</a></p>
+	
+</footer> 
+
+</div>
+
+</main>
+
+</body>
+</html>
