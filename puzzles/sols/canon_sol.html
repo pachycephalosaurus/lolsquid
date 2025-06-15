@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Canondrum </title>
+	<link href="../../style.css" rel="stylesheet" type="text/css" media="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+<!-- Sidebar start -->
+
+<div id="navbar"></div>
+<script>
+  fetch('/navbar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
+
+<div class="stripe"></div>
+
+<!-- Sidebar end -->
+
+<main>
+
+<div class="container"> <!-- Keeps sections from getting too stretched on ultrawide monitors -->
+
+<header>
+
+	<h1>Canondrum (Solution)</h1>
+
+</header>
+
+<section style="display: flex; justify-content: space-between; align-items: center;">
+    <h6 style="margin: 1;">
+        <a href="../canon.html">BACK</a>
+    </h6>
+</section>
+
+<section> 
+    <h6>Puzzle Author: me :D</h6>
+
+<center>
+    <h4>
+        ANSWER: <span class="censor-block">γ = 1.05894</span></p>
+    </h4>
+    <br>
+	
+</center>
+
+This sounds like a bunch of nonsense, but a careful ear (or open Shazam app) may identify this as Conlon Nancarrow, more particularly one of (#41) his Player Piano Studies. The construction of this canon involves use of two separate canons in two (with tempo ratios α and β, as you may recall), creating an overwhelming canon in four. It's entirely useless to attempt to 'count' this, as there is no normal time signature. In fact, Conlon Nancarrow is arguably most known for his use of irregular timing schemes, so we may need to turn to Google. A quick search <a href = "https://ia802902.us.archive.org/35/items/cd_studies-for-player-piano_conlon-nancarrow_3/cd_studies-for-player-piano_conlon-nancarrow_3.pdf">brings up</a> a book on the Internet Archive, on page 12 of which are the tempo ratios for canons A and B:
+
+<math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <mi>α</mi>
+    <mo>=</mo>
+    <mfrac>
+      <mfrac>
+        <mn>1</mn>
+        <msqrt>
+          <mi>π</mi>
+        </msqrt>
+      </mfrac>
+      <msqrt>
+        <mfrac>
+          <mn>2</mn>
+          <mn>3</mn>
+        </mfrac>
+      </msqrt>
+    </mfrac>
+    <mo>=</mo>
+    <msup>
+      <mrow>
+        <mo fence="true" form="prefix">(</mo>
+        <msqrt>
+          <mfrac>
+            <mrow>
+              <mn>2</mn>
+              <mi>π</mi>
+            </mrow>
+            <mn>3</mn>
+          </mfrac>
+        </msqrt>
+        <mo fence="true" form="postfix">)</mo>
+      </mrow>
+      <mrow>
+        <mo lspace="0em" rspace="0em">−</mo>
+        <mn>1</mn>
+      </mrow>
+    </msup>
+  </mrow>
+</math>
+
+<br><br>
+
+<math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <mi>β</mi>
+    <mo>=</mo>
+    <mfrac>
+      <mfrac>
+        <mn>1</mn>
+        <mroot>
+          <mi>π</mi>
+          <mn>3</mn>
+        </mroot>
+      </mfrac>
+      <mroot>
+        <mfrac>
+          <mn>13</mn>
+          <mn>16</mn>
+        </mfrac>
+        <mn>3</mn>
+      </mroot>
+    </mfrac>
+    <mo>=</mo>
+    <msup>
+      <mrow>
+        <mo fence="true" form="prefix">(</mo>
+        <mroot>
+          <mfrac>
+            <mrow>
+              <mn>13</mn>
+              <mi>π</mi>
+            </mrow>
+            <mn>16</mn>
+          </mfrac>
+          <mn>3</mn>
+        </mroot>
+        <mo fence="true" form="postfix">)</mo>
+      </mrow>
+      <mrow>
+        <mo lspace="0em" rspace="0em">−</mo>
+        <mn>1</mn>
+      </mrow>
+    </msup>
+  </mrow>
+</math>
+<br><br>
+<math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <mo>∴</mo>
+    <mi>γ</mi>
+    <mo>=</mo>
+    <mfrac>
+      <mi>β</mi>
+      <mi>α</mi>
+    </mfrac>
+    <mo>≃</mo>
+    <mfrac>
+      <msqrt>
+        <mfrac>
+          <mrow>
+            <mn>2</mn>
+            <mi>π</mi>
+          </mrow>
+          <mn>3</mn>
+        </mfrac>
+      </msqrt>
+      <mroot>
+        <mfrac>
+          <mrow>
+            <mn>13</mn>
+            <mi>π</mi>
+          </mrow>
+          <mn>16</mn>
+        </mfrac>
+        <mn>3</mn>
+      </mroot>
+    </mfrac>
+    <mo>≃</mo>
+    <mrow notation="box" scriptlevel="0" displaystyle="true" style="padding:padding: 3pt 0 3pt 0;border:1px solid;">
+      <mspace width="3pt"></mspace>
+      <mtext>𝟏.𝟎𝟓𝟖𝟗𝟒</mtext>
+      <mspace width="3pt"></mspace>
+    </mrow>
+    <mn style="color:#c0c0c0;">0502...</mn>
+  </mrow>
+</math>
+
+Bravo!
+
+</section>
+<footer>
+
+	<p>stentor.css by <a href="https://ribo.zone/free/layouts/">ribo.zone</a></p>
+	
+</footer> 
+
+</div>
+
+</main>
+
+</body>
+</html>
