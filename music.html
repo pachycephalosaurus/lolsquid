@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <base href = "/lolsquid/">
 	<title> μzik </title>
 	<link href="style.css" rel="stylesheet" type="text/css" media="all">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,7 +54,7 @@
 </main>
 
 <script>
-  fetch('/navbar.html')
+  fetch('navbar.html')
     .then(res => res.text())
     .then(html => {
       document.getElementById('navbar').innerHTML = html;
