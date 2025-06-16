@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base src = "/lolsquid/">
+	<title> origami </title>
+	<link href="style.css" rel="stylesheet" type="text/css" media="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+<!-- Sidebar start -->
+
+<div id="navbar"></div>
+<script>
+  fetch('navbar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script> 
+
+<div class="stripe"></div>
+
+<!-- Sidebar end -->
+
+<main>
+
+<div class="container"> <!-- Keeps sections from getting too stretched on ultrawide monitors -->
+
+<header>
+
+	<h1>origami that I have made</h1>
+
+</header>
+<center>
+
+    <h1><a href="https://origami.me/crane/" style="color: black; background-color:cornflowerblue; margin: 5pt;">Crane</a></h1>
+    <img src = "ori/crane.jpg" width = 60% height = 60%>
+
+</center>
+
+<footer>
+
+	<p>stentor.css by <a href="https://ribo.zone/free/layouts/">ribo.zone</a></p>
+	
+</footer> 
+
+</div>
+
+</main>
+
+</body>
+</html>
