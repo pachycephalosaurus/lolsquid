@@ -48,11 +48,14 @@ body {
   font-weight: 400;
   display: block;
   filter: none;
+  white-space: normal;
+  word-break: break-word;
+  width: 100%;
 }
 
 .img-wrapper:hover .caption {
-  font-weight: 400;
-  font-size: 120%;
+  font-weight: 800;
+  font-size: 100%;
   color: #3e2723;
   filter: none;
 }
@@ -60,11 +63,12 @@ body {
 .img-wrapper {
   /* transform: rotate(90deg); */
   display: flex;
+  width: max-content; 
   align-items: center;
   justify-content: center;
   min-height: 40vh;
   transform-origin: 50% 50%;
-  transform: rotate(90deg) translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
+  transform: rotate(90deg) translateZ(.1px) scale(90%) translateX(0px) translateY(-3vh);
   transition: 1s;
 }
 
@@ -136,11 +140,23 @@ h1 {
 }
 
 .img-wrapper a {
-  overflow: hidden;
-  display: block;
-  padding: 1vh ;
+  display: inline-block;
   background: white;
   box-shadow: 0 10px 50px #5f2f1182;
+  padding: 1vh;
+  text-align: center;
+  white-space: normal;
+  max-width: none; 
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: auto;
+  /* max-width: 45vh; */
+  max-height: 50vh;
+  transition: 0.5s;
+  vertical-align: top;
+  filter: saturate(40%) sepia(0%) hue-rotate(5deg);
 }
 
 .img-wrapper-blur img {
