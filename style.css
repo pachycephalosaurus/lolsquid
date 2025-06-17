@@ -1,9 +1,9 @@
 :root {
-	--text: darkslategray;
-	--line: darkseagreen;
-	--accent: cadetblue;
-	--bg: lightgray;
-	--fill: whitesmoke;
+	--text: #080808;
+	--line: #cd4361;
+	--bg: #f7db9a;
+	--accent: #81adc8;
+	--fill: #ffffe7;
 }
 
 @font-face {
@@ -249,7 +249,7 @@ section {
 	margin: 2em 0;
 	padding: 1em 2em;
 	background-color: var(--fill);
-	border: 5px solid var(--line);
+	border: 10px solid var(--line);
 }
 
 .stripe {
@@ -326,13 +326,13 @@ cite {
 }
 
 code, details, pre {
-	background-color: var(--bg);
+	/* background-color: black; */
 }
 
 code { 
 	font-family: 'Courier New', monospace; 
-	padding: 2px;
-	color: rgb(255, 0, 72);
+	/* padding: 2px; */
+	color: rgb(0, 198, 30);
 }
 
 details, pre {
@@ -453,4 +453,40 @@ footer a { color: var(--text); }
 		display: block;
 	  }
 	
+}
+
+.crt {
+/* scanlines */
+  background: linear-gradient(to top, #000000, #000000, #333333, #333333);
+  background-size: cover;
+  background-size: 100% 1px;
+
+/* retro stuff */
+  color: #00ff00;
+  font-family: "Courier New", monospace;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 0 0 10px #00ff00;
+
+/* flex stuff */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+@media screen{
+  .crt {
+    animation: scanlines infinite 55s linear ;
+  }
+} 
+@keyframes scanlines {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -10px;
+  }
 }

@@ -1,0 +1,32 @@
+:root {
+	--text: #080808;
+	--line: gray;
+	--accent: cadetblue;
+	--bg: lightgray;
+	--fill: #ffffff;
+}
+
+:root {
+	--text: #080808;
+	--line: #df2935;
+	--accent: #3772ff;
+	--bg: #fdca40;
+	--fill: #ffffff;
+}
+
+:root {
+	--text: #080808;
+	--line: #cd4361;
+	--bg: #f7db9a;
+	--accent: #81adc8;
+	--fill: #ffffe7;
+}
+
+:root {
+	--text: #080808;
+	--line: #004e98;
+	--accent: #ff5700;
+	--bg: #3a6ea5;
+	--fill: #ebebeb;
+}
+
