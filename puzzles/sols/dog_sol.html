@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <base src = "/lolsquid/">
-	<title> origami </title>
-	<link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <base src = "/lolsquid/">
+	<title> TABTITLE </title>
+	<link href="../../style.css" rel="stylesheet" type="text/css" media="all">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 </head>
@@ -14,12 +14,12 @@
 
 <div id="navbar"></div>
 <script>
-  fetch('navbar.html')
+  fetch('/navbar.html')
     .then(res => res.text())
     .then(html => {
       document.getElementById('navbar').innerHTML = html;
     });
-</script> 
+</script>
 
 <div class="stripe"></div>
 
@@ -31,16 +31,30 @@
 
 <header>
 
-	<h1>origami that I have made</h1>
+	<h1>PUZZLETITLE (Solution)</h1>
 
 </header>
+
+<section style="display: flex; justify-content: space-between; align-items: center;">
+    <h6 style="margin: 1;">
+        <a href="../PUZZLEPAGE.html">BACK</a>
+    </h6>
+</section>
+
+<section> 
+    <h6>Puzzle Author: AUTHORGOESHERE</h6>
+
 <center>
-
-    <h1><a href="https://origami.me/crane/" style="color: black; background-color:cornflowerblue; margin: 5pt;">Crane</a></h1>
-    <img src = "ori/crane.jpg" width = 60% height = 60%>
-
+    <h4>
+        ANSWER: <span class="censor-block">ANSWERGOESHERE</span></p>
+    </h4>
+    <br>
+	
 </center>
 
+SOLUTIONTEXT
+
+</section>
 <footer>
 
 	<p>stentor.css by <a href="https://ribo.zone/free/layouts/">ribo.zone</a></p>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base src = "/lolsquid/">
+	<title> ARTS 'N' CRAFTS </title>
+	<link href="style.css" rel="stylesheet" type="text/css" media="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+<!-- Sidebar start -->
+
+<div id="navbar"></div>
+<script>
+  fetch('navbar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script> 
+
+<div class="stripe"></div>
+
+<!-- Sidebar end -->
+
+<main>
+
+<div class="container"> <!-- Keeps sections from getting too stretched on ultrawide monitors -->
+
+<header>
+
+<h1>ARTS 'N' CRAFTS</h1>
+
+</header>
+
+<section>
+  <blockquote cite = "example">
+    <p> She's a little artsy-fartsy. The artsy's okay, but once she gets fartsy... </p>
+    <cite> ~ Piper (talking about Aunt Fanny)</cite>
+  </blockquote>
+</section>
+
+<h1>ORIGAMI</h1>
+<br>
+
+<center>
+
+<div class="scroll-container">
+    <img src="origami/crane.jpg" alt="crane">
+    <img src="origami/dragon.jpg" alt="dragon">
+  </div>
+  <!-- Add more images as needed -->
+</div>
+
+</center>
+
+<h1>STAMPS</h1>
+<br>
+
+<center>
+
+<div class="scroll-container">
+    <img src="stamps/squid.png" alt="squid">
+    <img src="stamps/korilakkuma.png" alt="korilakkuma">
+    <img src="stamps/crane.jpg" alt="paper crane">
+  </div>
+  <!-- Add more images as needed -->
+</div>
+
+</center>
+
+<footer>
+
+	<p>stentor.css by <a href="https://ribo.zone/free/layouts/">ribo.zone</a></p>
+	
+</footer> 
+
+</div>
+
+</main>
+
+</body>
+</html>
