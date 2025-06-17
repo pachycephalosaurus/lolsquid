@@ -3,6 +3,7 @@ body {
   font-weight: 500;
   background: lightgray;
   color: navy;
+  cursor: url("cursor.png"), auto; 
 }
 * {
   box-sizing: border-box;
@@ -60,6 +61,13 @@ body {
   filter: none;
 }
 
+.img-wrapper-blur:hover .caption {
+  font-weight: 800;
+  font-size: 100%;
+  color: #3e2723;
+  filter: none;
+}
+
 .img-wrapper {
   /* transform: rotate(90deg); */
   display: flex;
@@ -73,7 +81,7 @@ body {
 }
 
 .img-wrapper:hover {
- min-height: 65vh;
+  min-height: 65vh;
 }
 
 .container{
