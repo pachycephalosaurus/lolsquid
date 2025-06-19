@@ -134,7 +134,64 @@ body {
 	color: var(--text);
 	/* font-family: "Verdana";  */
 	font-family: "IBM Plex Mono";
-	font-size: 125%;
+	font-size: 110%;
+}
+
+.running-line-wrapper {
+  margin: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.running-line {
+  font-size: 100px;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #444;
+  white-space: nowrap;
+}
+
+.running-line {
+  animation: run 2s linear infinite;
+}
+
+@keyframes run {
+  from {
+    transform: translateX(0%);
+  }
+  /* Magic is here. This is the width of the elem with text after rendering the page */
+  to {
+    transform: translateX(-1683.35px);
+  }
+}
+
+.wave-text span {
+    display: inline-block;
+    font-size: 4rem;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 .matrix-container {
@@ -142,14 +199,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 28px;
+  height: 50px;
   background-color: #040404;
   z-index: 2; /* Ensure it stays above the rain effect */
 }
 
 .matrix-text {
   color: #0f0;
-  font-size: 18px;
+  font-size: 1.2vw;
   font-family: monospace;
   position: relative;
   text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
@@ -175,7 +232,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 50%;
   background: repeating-linear-gradient(
     0deg,
     rgba(0, 255, 0, 0.1) 0,
@@ -393,7 +450,7 @@ h2 { font-size: 2em;
 	padding: 5px;
 	max-width: 2000px;
 }
-h1 { font-size: 3em; }
+h1 { font-size: 5vw; }
 
 
 
