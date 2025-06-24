@@ -166,32 +166,38 @@ body {
   }
 }
 
-.wave-text span {
-    display: inline-block;
-    font-size: 4rem;
-    animation: wave 2s ease-in-out infinite;
+marquee {
+	width: 100%;
+	overflow: hidden;
+
 }
 
-.wave-text span:nth-child(1) {
-    animation-delay: 0s;
+.wave-container {
+  display: flex; 
+  align-items: center; 
+  height: 100%; 
+  justify-content: center;
 }
-.wave-text span:nth-child(2) {
-    animation-delay: 0.2s;
+.wave-text {
+  display: flex;
+  flex-wrap: nowrap; 
+  justify-content: center; 
 }
-.wave-text span:nth-child(3) {
-    animation-delay: 0.4s;
-}
-.wave-text span:nth-child(4) {
-    animation-delay: 0.6s;
+
+.wave-text span {
+  display: inline-block; 
+  font-size: 4rem;
+  animation: wave 2s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.2s);
 }
 
 @keyframes wave {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 .matrix-container {
@@ -206,7 +212,7 @@ body {
 
 .matrix-text {
   color: #0f0;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   font-family: monospace;
   position: relative;
   text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
