@@ -315,6 +315,7 @@ nav div {
 	text-align: right;
 }
 
+
 	.scroll-container {
 	background-color: #333;
 	overflow: auto;
@@ -341,6 +342,7 @@ nav div {
 		padding: 0 4px;
 		transition: color 0.3s ease, background-color 0.3s ease;
 		cursor: pointer;
+		text-align: left;
 	}
 
 	.censor-block:hover {
@@ -395,6 +397,9 @@ section {
 	padding: 1em 2em;
 	background-color: var(--fill);
 	border: 10px solid var(--line);
+	align-items: center;
+	display: flex;
+	justify-content: center;
 }
 
 .stripe {

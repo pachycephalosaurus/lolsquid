@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base src = "/lolsquid/">
+	<title> Where in the World is Christo Javacheff? </title>
+	<link href="../style.css" rel="stylesheet" type="text/css" media="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+<!-- Sidebar start -->
+
+<div id="navbar"></div>
+<script>
+  fetch('../navbar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
+
+<div class="stripe"></div>
+
+<!-- Sidebar end -->
+
+<main>
+
+<div class="container"> <!-- Keeps sections from getting too stretched on ultrawide monitors -->
+
+<header>
+
+	<h1>Where in the World is Christo Javacheff?<h1>
+
+</header>
+
+<section style="display: flex; justify-content: space-between; align-items: center;">
+    <h5 style="margin: 1;">
+        <a href="../puzzle.html">BACK</a>
+    </h5>
+    <h5 style="margin: 1;">
+        <a href="sols/christo_sol.html">View Solution</a>
+    </h5>
+</section>
+
+<section style = "display: flex; justify-content: space-between;">
+    <div class = "text-block" style = "font-size: larger; align-items: center; justify-items: center;">
+       This is a photo of artist Christo Javacheff (known as 'Christo' of artist duo 'Christo and Jeanne-Claude') standing with one of his artworks. I've been interested in this work for a long time, so I decided to look into it some more. Homework time! Find: <br>
+
+       <ol style = "font-size: smaller">
+        <li>The name of this artwork and its length (in km)</li>
+        <li>The name of the body of water in this image</li>
+        <li>The melting point of the material used (in ºC)</li>
+        <li>The <i>current</i> name of the company that provided said material</li>
+        <li>The coordinates of the (indicated) structure in the background (formally the "Western Terminus")</li>
+       </ol>
+    </div>
+<img src="christo.png" style = "width: 50%; padding-left: 50px"> 
+
+</section>
+
+    
+
+<footer>
+
+	<p>stentor.css by <a href="https://ribo.zone/free/layouts/">ribo.zone</a></p>
+	
+</footer> 
+
+</div>
+
+</main>
+
+</body>
+</html>
