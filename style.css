@@ -376,6 +376,13 @@ nav div {
 		overflow-wrap: break-word; /* ensures long words/wrapping */
 	}
 
+	.answerblock {
+		display: flex;
+		justify-content:center;
+		flex-wrap: wrap;
+		margin: 50px;
+	}
+
 nav a {
 	display: block;
 	margin: 10px 0;
