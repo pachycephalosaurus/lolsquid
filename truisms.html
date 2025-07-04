@@ -39,8 +39,6 @@
   <p style="font-size: 20px">
   <a href="index.html">←</a>
   </p>
-  
-  
 
   <script>
     // Array of quotes
@@ -300,15 +298,14 @@
 "YOUR OLDEST FEARS ARE THE WORST ONES"
     ];
 
-    // Function to display a random quote
     function displayRandomQuote() {
       const randomIndex = Math.floor(Math.random() * quotes.length);
       const quoteElement = document.getElementById("quoteDisplay");
       quoteElement.textContent = quotes[randomIndex];
     }
 
-    // Call the function when the page loads
     window.onload = displayRandomQuote;
   </script>
+
 </body>
 </html>

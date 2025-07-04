@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+
+
 <head>
 	<!-- <base href="/lolsquid/"> -->
 	<base href = "/lolsquid/">
@@ -17,6 +19,16 @@
     	document.head.appendChild(base);
   		})();
 	</script>
+
+	  <style>
+    #randomImage {
+      /* max-width: 90%; */
+      max-height: 20vh;
+      cursor: pointer;
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
 
 </head>
 
@@ -183,7 +195,10 @@
    			</h1>
 		</div>
 	</marquee>
-	<br><h1>welcome to my website!</h1>
+	
+	<br>
+	
+	<h1>welcome to my website!</h1>
 
 </header>
 
@@ -271,9 +286,62 @@
 		</p>
 	</section>
 
-	<!-- <section class="third"><p>This is a third-width section.</p></section>
-	<section class="twothird"><p>This is a two thirds-width section.</p></section>
-	<section class="threequarter"><p>This is a three quarter-width section.</p></section>
+	<section class="third"><p>This is a third-width section.</p></section>
+
+<section class="third"> 
+	<p>
+		<img id="randomImage" src="funny.png">
+	<script>
+		const images = ["funny/adhd.jpg",
+		"funny/asexual.jpg",
+		"funny/baseball.jpg",
+		"funny/bisexual.jpg",
+		"funny/bl.jpg",
+		"funny/bladee.jpg",
+		"funny/budlight.jpg",
+		"funny/cope.jpg",
+		"funny/damn.jpg",
+		"funny/dino.jpg",
+		"funny/dorry.jpg",
+		"funny/drink.jpg",
+		"funny/earhart.jpg",
+		"funny/enjoy.jpg",
+		"funny/eyes.jpg",
+		"funny/feelingher.jpg",
+		"funny/frontbottoms.jpg",
+		"funny/fword.jpg",
+		"funny/gendermethis.jpg",
+		"funny/girl.jpg",
+		"funny/hawktuah.jpg",
+		"funny/ipod.jpg",
+		"funny/italian.jpg",
+		"funny/jane.jpg",
+		"funny/japan.jpg",
+		"funny/kitty.jpg",
+		"funny/laruru.jpg",
+		"funny/minnie.jpg",
+		"funny/nonbinary.jpg",
+		"funny/sayit.jpg",
+		"funny/self.jpg",
+		"funny/soul.jpg",
+		"funny/they.jpg",
+		"funny/wheatley.jpg",
+		"funny/yaaaay.jpg"];
+
+  		const imgElement = document.getElementById('randomImage');
+
+		imgElement.addEventListener('click', () => {
+			const randomIndex = Math.floor(Math.random() * images.length);
+			imgElement.src = images[randomIndex];
+			});
+	</script>
+
+	</p>
+</section>
+
+<section class="third"><p>This is a third-width section.</p></section>
+
+	<!-- <section class="threequarter"><p>This is a three quarter-width section.</p></section>
 	<section class="quarter"><p>This is a quarter-width section.</p></section> -->
 
 </div>
