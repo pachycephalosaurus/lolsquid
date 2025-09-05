@@ -134,7 +134,7 @@ body {
 	color: var(--text);
 	/* font-family: "Verdana";  */
 	font-family: "IBM Plex Mono";
-	font-size: 100%;
+	font-size: 90%;
 }
 
 .running-line-wrapper {
@@ -160,7 +160,7 @@ body {
   from {
     transform: translateX(0%);
   }
-  /* Magic is here. This is the width of the elem with text after rendering the page */
+
   to {
     transform: translateX(-1683.35px);
   }
@@ -460,7 +460,7 @@ ul ul, ol ol {
 }
 
 p, table,  ul, ol, dl {
-	font-size: 1.5rem;
+	font-size: 1rem;
 }
 
 a { 
@@ -481,17 +481,17 @@ p a:hover {
 }
 
 
-h6 { font-size: 1em; }
-h5 { font-size: 1.25em; }
-h4 { font-size: 1.5em; }
-h3 { font-size: 1.75em; }
-h2 { font-size: 2em;
+h6 { font-size: 0.75em; }
+h5 { font-size: 1em; }
+h4 { font-size: 1.25em; }
+h3 { font-size: 1.5em; }
+h2 { font-size: 1.75em;
 	text-align: center;
 	background-color: var(--accent);
 	padding: 5px;
 	max-width: 2000px;
 }
-h1 { font-size: 5vw; }
+h1 { font-size: 4vw; }
 
 
 
