@@ -320,16 +320,16 @@ nav div {
 		display: flex;
 		justify-content:center;
 		flex-wrap: wrap;
-		gap: 10px;
-		padding: 10px 0px;
-		max-width: 1100px;
+		gap: 2px;
+		padding: 0px 0px;
+		max-width: 900px;
 		margin: 0 auto;
 	}
 
 	.indexheader a img {
 		width: 100%;
 		max-width: 88px;
-		height: auto;
+		max-height: 31px;
 	}
 
 	.scroll-container {
@@ -470,9 +470,10 @@ a {
 
 .sidelink {
 	border: 10px solid var(--line); 
-	padding: 10px; 
+	padding: 0.6vw; 
 	background-color: var(--accent);
 	margin-left: 10px;
+	scale: 0.8vw;
 }
 
 p a:hover { 
