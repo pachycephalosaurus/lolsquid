@@ -513,9 +513,9 @@ cite {
 	text-align: right;
 }
 
-code, details, pre {
-	/* background-color: black; */
-}
+/* code, details, pre {
+	background-color: black; 
+} */ 
 
 code { 
 	font-family: 'Courier New', monospace; 
@@ -567,6 +567,7 @@ footer a { color: var(--text); }
 .third { flex: 1 1 calc(33% - 2em); }
 .twothird { flex: 1 1 calc(66% - 2em); }
 .quarter { flex: 1 1 calc(25% - 2em); }
+.free { flex: 1 1; }
 .threequarter { flex: 1 1 calc(75% - 2em); }
 
 @media screen and (max-width: 800px){
