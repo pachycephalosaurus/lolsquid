@@ -317,10 +317,10 @@ nav div {
 }
 
 	.indexheader {
-		display: flex;
-		justify-content:center;
+		display: block;
+		justify-content: center;
 		flex-wrap: wrap;
-		gap: 2px;
+		gap: 5px;
 		padding: 0px 0px;
 		max-width: 900px;
 		margin: 0 auto;
@@ -355,7 +355,7 @@ nav div {
 	.censor-block {
 		color: transparent;
 		background-color: black;
-		border-radius: 3px;
+		border-radius: 0px;
 		padding: 0 4px;
 		transition: color 0.3s ease, background-color 0.3s ease;
 		cursor: pointer;
@@ -483,7 +483,7 @@ p a:hover {
 }
 
 
-h6 { font-size: 0.75em; }
+h6 { font-size: 1em; }
 h5 { font-size: 1em; }
 h4 { font-size: 1.25em; }
 h3 { font-size: 1.5em; }

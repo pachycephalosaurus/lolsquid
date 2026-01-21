@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base src = "/lolsquid/">
+	<title> A Puzzle in 140 Characters (Solution) </title>
+	<link href="../../style.css" rel="stylesheet" type="text/css" media="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+<!-- Sidebar start -->
+
+<div id="navbar"></div>
+<script>
+  fetch('/lolsquid/navbar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+    });
+</script>
+
+<div class="stripe"></div>
+
+<!-- Sidebar end -->
+
+<main>
+
+<div class="container"> <!-- Keeps sections from getting too stretched on ultrawide monitors -->
+
+<header>
+
+	<h1>A Puzzle in 140 Characters (Solution)</h1>
+
+</header>
+
+<section style="display: flex; justify-content: space-between; align-items: center;">
+    <h6 style="margin: 1;">
+        <a href="../140.html">BACK</a>
+    </h6>
+</section>
+
+<section> 
+    <h6>Puzzle Author: <a href = "https://puzzling.stackexchange.com/users/33827/stacksfiller">stacksfiller</a></h6>
+
+<div class = "answerblock" style = "align-items: center; justify-content: center;">
+    <h4>
+        INTERMEDIATE ANSWERS: <br>
+        1. <span class="censor-block">ACCENT</span><br>
+        2. <span class="censor-block">ATONE</span><br>
+        3. <span class="censor-block">BARON</span><br>
+        4. <span class="censor-block">COLOGNE</span><br>
+        5. <span class="censor-block">DONUTS</span><br>
+        6. <span class="censor-block">OATH</span><br>
+        7. <span class="censor-block">SLASHER</span><br>
+        8. <span class="censor-block">STARCH</span><br>
+        9. <span class="censor-block">THRASH</span><br><br>
+
+        FINAL ANSWER: <span class="censor-block">NOT ENOUGH CHARACTER</span><br>
+    </h4>
+    <br>
+</div>
+
+This is one of the coolest puzzles I have ever seen. Let's dig in to my writeup: <br><br>
+
+The first thing to notice is that this is actually nine puzzles and a meta (the latter of which is obvious, but the distinctions between puzzles can be confusing.) Divided with line breaks, the puzzle would look like this:<br><br>
+
+1. 🐾❄🥅#📌♠💦255879 <br>
+2. ⠗⠕⠞⠼⠁⠊⠉:⠺⠠⠰⠶⠮<br>
+3. ∞WᒧO3>H∽UO)Z⊢<br>
+4. せம佛أر➪ᓭܜ⚡ﺪトΛí<br>
+5. ĆẸİĿMṈOṖ$ŦŪVY<br>
+6. A hot new vow<br>
+7. ⊔N⌶ⅽ✜ዐᛊfirsts<br>
+8. 🐌🌮🚇✒🔑🛑🐣➖💅☄📂🎹🎩<br>
+9. V𝙸२-ƧΞ⊕ꘜ⊞।Ʌ𝟾⎕<br>
+META:…|#/|@…:@**¢#1¢1:/ <br><br>
+
+With that out of the way, let's go puzzle by puzzle: <br><br>
+
+<h4>1: 🐾❄🥅#📌♠💦255879</h4><br>
+The mechanic here is a 3x3 crossword, clued by the # character. The first three emoji are the across clues, and the second three are the down clues. When properly filled out, the crossword looks like this: <br><br>
+
+<table style="margin: 0 auto; border-collapse: collapse; border: 0px;""><thead><tr><th>P</th><th>A</th><th>W</th></tr></thead><tbody><tr><th>I</th><th>C</th><th>E</th></tr><tr><th>N</th><th>E</th><th>T</th></tr></tbody></table>
+
+<br>
+
+With the completed crossword, we can use the given numbers (255879) to select letters as if the grid were a phone keypad. With the top left corner corresponding to 1 and the bottom right to 9, we can extract <span class = "censor-block">ACCENT</span> as our first answer! <br><br>
+
+<h4>2. ⠗⠕⠞⠼⠁⠊⠉:⠺⠠⠰⠶⠮<br></h4>
+This is a puzzle that's <i>almost</i> entirely in Braille, except for that sneaky colon! The text, when translated from Braille, reads <b>rot193: wGgthe</b> (the weird, repeated G comes from the ⠠ Braille character, indicating uppercase. This will quickly be demonstrated as irrelevant.) <br><br>
+
+rot193 would not be a valid shift, as it would depend on a 193-character alphabet (usually only achievable with an extended ASCII characterset, which leads to very ugly answers). Instead, rot193 is to be interpreted as <i>rot180 + rot13</i>, the former corresponding to a <i>180º rotation of the Braille following the colon.</i> Doing this converts ⠺⠠⠰⠶⠮ to ⠝⠛⠃⠁⠗, or NGBAR. After applying the rot13, the answer <span class = "censor-block">ATONE</span> is revealed. <br><br>
+
+<h4>3. ∞WᒧO3>H∽UO)Z⊢</h4>
+
+This one is fairly simple: just rotate each character 90º clockwise to get: <br>
+8ΣLOω VISCOUNT<br>
+with the first word to be read as BELOW. The British nobility class BELOW the VISCOUNT is the <span class = "censor-block">BARON</span>, solving puzzle 3. <br><br>
+
+<h4>4. せம佛أر➪ᓭܜ⚡ﺪトΛí</h4>
+This puzzle, like puzzle 2, is split into components before and after the delimeter (in this case, ➪). The symbols to the left of the arrow, in order, are:
+<ul>
+    <li>せ - Japanese kana <b>SE</b></li>
+    <li>ம - Tamil <b>MA</b> </li>
+    <li>佛 - Mandarin <b>FÓ</b> </li>
+    <li>أر - Arabic <b>'A.RA</b></li>
+</ul>
+
+When pronounced in English, this can be read as <b> SEMAPHORE</b>, indicating that the characters to the right of the arrow are to rbe interpreted as if they were in semaphore. With the first character ᓭ interpreted as <span class = "censor-block">C</span>, this gives <span class = "censor-block">COLOGNE</span> as the fourth answer. (NOTE: ﺪ is likely the most difficult character to properly interpret due to differences in font rendering, but leaving it blank and solving the rest should make the answer obvious).<br><br>
+
+<h4>5. ĆẸİĿMṈOṖ$ŦŪVY</h4>
+
+This is an anagram puzzle with some Morse code imbued into it. Unscrambling the letters  (Nutrimatic times out, but Qat saves the day!) gives CONSUMPTIVELY, or ĆOṈ$ŪMṖŦİVẸĿY with the accent markings included. Each letter has either one extra dot, one extra line, or is plain, and these correspond to dots, dashes, and slashes. The written out morse code translation of the word is - / --- / .-. / .. /, which translates to TORI. Combining this with the previous result gives TORI, CONSUMPTIVELY, a crossword clue that solves to <span class = "censor-block">DONUTS</span> (TORI being the plural of TORUS). <br><br>
+
+<h4>6. A hot new vow</h4>
+
+This is a cryptic that solves to <span class = "censor-block">OATH</span>. The definition is "VOW" and the wordplay is "A HOT, NEW" or a scrambling of "AHOT" to "<span class = "censor-block">OATH</span>". I'm not sure how I feel about this one. <br><br>
+
+<h4>7. ⊔N⌶ⅽ✜ዐᛊfirsts</h4>
+
+This can be read as "UNICODE FIRSTS", implying we want the first character of the Unicode <i>name</i> (not code!) of the characters:
+
+<ul>
+    <li> ⊔ - u+2294 <b>S</b>quare Cup</li>
+    <li> N - u+004E <b>L</b>atin Capital N</li>
+    <li> ⌶ - u+2336 <b>A</b>PL Functional Symbol I-Beam</li>
+    <li> ⅽ - u+217D <b>S</b>mall Roman Number One Hundred</li>
+    <li> ✜ - u+271C <b>H</b>eavy Open Centre Cross</li>
+    <li> ዐ - u+12D0 <b>E</b>thipoic Syllable Pharyngeal A</li>
+    <li> ᛊ - u+16CA <b>R</b>unic Letter Solwilo</li>
+</ul>
+
+The first letter of each character name spells out <span class = "censor-block">SLASHER</span>, solving puzzle 7. <br><br>
+
+<h4>8. 🐌🌮🚇✒🔑🛑🐣➖💅☄📂🎹🎩</h4>
+
+This is an emoji rebus puzzle with another delimiter (➖). The first emoji are:<br>
+SNAIL TACO METRO PEN KEY STOP HATCH <br>
+and the second emoji are<br>
+NAIL COMET OPEN KEYS TOPHAT.<br><br>
+
+Subtracting the second emoji from the first leaves the letters S---- TA-- ---R- --- ---- ---CH, or <span class = "censor-block">STARCH</span> as our next answer. <br>
+
+<h4>9. V𝙸२-ƧΞ⊕ꘜ⊞।Ʌ𝟾⎕</h4>
+
+Almost done! This last puzzle uses the XOR symbol (⊕) to denote the ... XOR-ing(?) ... of the two strings before and after it. The XOR operator only takes parts present in one of the symbols (in other words, any common areas between the two symbols are deleted). Doing this with V and ꘜ gives T (for example), and going through all of the symbols gives: 
+<ul>
+    <li> V ⊕ ꘜ -> T </li>
+	<li> 𝙸 ⊕ ⊞ -> H </li>
+	<li> २ ⊕ । -> R </li>
+	<li> - ⊕ Ʌ -> A </li>
+	<li> Ƨ ⊕ 𝟾 -> S </li>
+	<li> Ξ ⊕ ⎕ -> H </li>
+</ul>
+
+with the final answer being <span class = "censor-block">THRASH</span>. <br><br>
+
+<h4>META:…|#/|@…:@**¢#1¢1:/</h4>
+
+Meta time! To recap, our answers are: <br>
+<span class="censor-block">ACCENT</span>, <span class="censor-block">ATONE</span>, <span class="censor-block">BARON</span>, <span class="censor-block">COLOGNE</span>, <span class="censor-block">DONUTS</span>, <span class="censor-block">OATH</span>, <span class="censor-block">SLASHER</span>, <span class="censor-block">STARCH</span>, and <span class="censor-block">THRASH</span> (in order)<br>
+The meta consists of 9 (hmmm) different symbols, each repeated twice (hmmm). Identifying these symbols (in a convenient order), we have ¢ (CENT), 1 (ONE), | (BAR), : (COLON), ... (DOTS), @ (AT), / (SLASH), * (STAR), and # (HASH). Astute readers may have noticed the similarities between STAR and <span class = "censor-block">STARCH</span>, as well as BAR and <span class = "censor-block">BARON</span>. This is the link between answer and meta; <i>SYMBOL = ANSWER - 2 LETTERS </i>, one for each occurrence! How sweet! Subtracting the answers gives: <br><br>
+<ul>
+<li> …: dots -> DONUTS - NU </li>
+<li> |: bar -> BARON - ON </li>
+<li> #: hash -> THRASH - TR </li>
+<li> /: slash -> SLASHER - ER </li>
+<li> |: bar -> BARONS - ON </li>
+<li> @: at -> OATH - OH </li>
+<li> …: dots -> DONUTS - NU </li>
+<li> :: colon -> COLOGNE - GE </li>
+<li> @: at -> OATH - OH </li>
+<li> *: star -> STARCH - CH </li>
+<li> *: star -> STARCH - CH </li>
+<li> ¢: cent -> ACCENT - AC </li>
+<li> #: hash -> THRASH - TR </li>
+<li> 1: one -> ATONE - AT </li>
+<li> ¢: cent -> ACCENT - AC </li>
+<li> 1: one -> ATONE - AT </li>
+<li> :: colon -> COLOGNE - GE </li>
+<li> /: slash -> SLASHER - ER </li>
+</ul>
+<br><br>
+Or, in proper order, <br><br>
+<ul>
+<li> … - N </li>
+<li> | - O </li>
+<li> # - T </li>
+<li> / - E </li>
+<li> | - N </li>
+<li> @ - O </li>
+<li> … - U </li>
+<li> : - G </li>
+<li> @ - H </li>
+<li> * - C </li>
+<li> * - H </li>
+<li> ¢ - A </li>
+<li> # - R </li>
+<li> 1 - A </li>
+<li> ¢ - C </li>
+<li> 1 - T </li>
+<li> : - E </li>
+<li> / - R </li>
+</ul>
+
+with our final final answer being <span class = "censor-block">NOT ENOUGH CHARACTER</span>, which is a valid complaint against Twitter! <br> My God this puzzle is incredible.
+
+</section>
+<footer>
+
+
+	<p>stentor.css by <a href="https://ribo.zone/free/layouts/">ribo.zone</a></p>
+	
+</footer> 
+
+</div>
+
+</main>
+
+</body>
+</html>
