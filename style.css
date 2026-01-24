@@ -362,7 +362,7 @@ nav div {
 		text-align: left;
 	}
 
-	.censor-block:hover {
+	.censor-block:hover, .censor-block:active {
 		color: inherit;
 		background-color: transparent;
 	}
